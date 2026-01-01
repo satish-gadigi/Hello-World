@@ -4,13 +4,20 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-//                git 'https://github.com/satish-gadigi/Hello-World.git'
-            }
-        }
+
+        checkout([$class: 'GitSCM',
+            branches: [[name: '*/main']],
+            userRemoteConfigs: [[url: 'https://github.com/satish-gadigi/Hello-World.git']]
+        ])
+    }
+}
+               // git 'https://github.com/satish-gadigi/Hello-World.git'
+            
+        
 
         stage('Build') {
             steps {
-                sh 'docker build -t satishri/Hello-World:${BUILD_NUMBER} .'
+                sh 'docker build -t satishri/hello-world:${BUILD_NUMBER} .'
             }
         }
 
