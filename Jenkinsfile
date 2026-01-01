@@ -34,5 +34,10 @@ pipeline {
                 }
             }
         }
+	stage('Deploy')	{
+		steps {
+sh 'docker run -d --name helloworldbasicpythonapp -p 8080:8080 satishri/hello-world:latest'
+}
+		}
     }
 }
