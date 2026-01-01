@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/satish-gadigi/hello-world.git'
+                git 'https://github.com/satish-gadigi/Hello-World.git'
             }
         }
 
         stage('Build') {
             steps {
-                sh 'docker build -t satishri/hello-world:${BUILD_NUMBER} .'
+                sh 'docker build -t satishri/Hello-World:${BUILD_NUMBER} .'
             }
         }
 
