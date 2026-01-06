@@ -21,7 +21,10 @@ In PC:
 
 Steps:
     Write Jenkinsfile along with your source code in PC. Configure the jenkins pipeline (access jenkins in your mobile or in PC with ip)
-Once the pipeline started to build, Initially connects the Node(PC) and then run Jenkinsfile steps. Steps includes that, 
+Once the pipeline started to build, Jenkinsfiles triggered then executes the stages as per the below stages. 
+
+Initially connects the Node(PC) 
+|
 pull code from git hub in PC's configured location
 |
 Builds the code
@@ -39,8 +42,10 @@ Next steps:
 ___________
 
 -> Automatic integration setup while pushing the changes to github
--> Continuous Deploy
+Status:Implemented in this change
 
+-> Continuous Deploy
+Status: Yet to start
 "
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
