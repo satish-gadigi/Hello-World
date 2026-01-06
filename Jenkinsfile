@@ -34,9 +34,18 @@ pipeline {
                 }
             }
         }
+stage('Cleanup Old Container') {
+            steps {
+                sh '''
+                # Stop and remove container if it already exists
+                docker rm -f helloworldappusingjenkins || true
+                '''
+            }
+        }
+
 	stage('Deploy')	{
 		steps {
-sh 'docker run -d -p 8080:8080 satishri/hello-world:latest'
+sh 'docker run -d --name helloworldappusingjenkins -p 8080:8080 satishri/hello-world:latest'
 }
 		}
     }
