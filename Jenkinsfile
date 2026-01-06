@@ -38,7 +38,7 @@ stage('Cleanup Old Container') {
             steps {
                 sh '''
                 # Stop and remove container if it already exists
-                # docker rm -f helloworldappusingjenkins || true
+                 docker rm -f helloworldappusingjenkins || true
 docker ps -q --filter "publish=8080" | xargs -r docker rm -f
                 '''
             }
