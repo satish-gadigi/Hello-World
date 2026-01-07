@@ -2,7 +2,7 @@ pipeline {
     
 //agent { label 'lbl_agent_node' }
 
-agent {any}
+agent any
     stages {
         stage('Checkout') {
             steps {
