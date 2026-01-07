@@ -48,7 +48,7 @@ docker ps -q --filter "publish=8080" | xargs -r docker rm -f
 
 	stage('Deploy')	{
 		steps {
-sh 'docker run -d --name helloworldappusingjenkins -p 8080:8080 satishri/hello-world:latest'
+sh 'docker run -d --name helloworldappusingjenkins -p 8081:8080 satishri/hello-world:latest'
 }
 		}
     }
