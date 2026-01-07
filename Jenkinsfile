@@ -26,7 +26,7 @@ agent any
         stage('Push') {
             steps {
                 withCredentials([usernamePassword(
-                    credentialsId: 'e5965bd2-ee6d-45c4-af9e-9823584feb98',
+                    credentialsId: 'docker-cred_id',
                     usernameVariable: 'DOCKER_USER',
                     passwordVariable: 'DOCKER_PASS'
                 )]) {
