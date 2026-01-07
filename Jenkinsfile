@@ -1,6 +1,8 @@
 pipeline {
-    agent { label 'lbl_agent_node' }
+    
+//agent { label 'lbl_agent_node' }
 
+agent {any}
     stages {
         stage('Checkout') {
             steps {
