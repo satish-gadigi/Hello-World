@@ -42,7 +42,7 @@ Next steps:<br>
 ___________<br><br>
 
 -> Automatic integration setup while pushing the changes to github<br>
-Status:Implemented in this change<br><br>
+Status:Implemented in this changeing by using Webhookrelay tool which gives a public url for localhost:8080/github-webhook/
 
 -> Continuous Deploy<br>
 Status: Yet to start<br><br>
