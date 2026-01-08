@@ -11,7 +11,7 @@ In Mobile:<br><br>
 
 1) Installed Termux(Mobile acts as linux machine with limited features).  <br>
 2) Inside Termux, installed open ssh so that i can access PC from mobile. <br>
-3) Installed jenkins and configured Nodes(with my PC wifi ip and linux credentials) and Pipeline  <br>
+3) Installed jenkins and configured Nodes(with my PC wifi ip and linux credentials) and Pipeline  <br><br>
 
 In PC: <br><br>
 
