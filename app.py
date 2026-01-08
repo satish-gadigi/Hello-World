@@ -49,7 +49,7 @@ Status: Yet to start\n\n
 
 ======
 =========================================================================================================================================\n
-Faced ssh issues in my PC so switched to PC only mode, excluding mobile setup from here onwards. Installed Jenkins in my PC and implementing now whole setup in PC"""\n
+Faced ssh issues in my PC so switched to PC only mode, excluding mobile setup from here onwards. Installed Jenkins in my PC and implementing now whole setup in PC \n"""
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
